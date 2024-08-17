@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="fa">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>قالب بوت‌استرپ</title>
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+
+        <style>
+          .card {
+            transition: transform 0.2s;
+          }
+          .card:hover {
+            transform: scale(1.05);
+          }
+
+          body {
+            background-image: url("999.jpg");
+            background-size: cover; /* تصویر به اندازه کامل صفحه */
+            background-position: center; /* تصویر در مرکز صفحه */
+            background-repeat: no-repeat; /* تکرار نشود */
+            height: 100vh; /* ارتفاع به اندازه‌ی نمای کامل */
+            margin: 0; /* حذف حاشیه‌های پیش‌فرض */
+            filter: brightness(0.8) contrast(1.2); /* تنظیم روشنایی و کنتراست */
+            position: relative; /* برای استفاده از عناصر با موقعیت نسبی */
+          }
+
+          .overlay {
+            position: absolute; /* قرار دادن روی تصویر */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.438); /* ایجاد لایه مشکی نیمه شفاف */
+            pointer-events: none; /* جلوگیری از تاثیر روی تعاملات کاربر */
+          }
+          .card {
+            background-color: rgba(43, 56, 175, 0.705); /* رنگ سفید مات */
+          }
+          .nav-tabs .nav-link {
+            background-color: rgba(0, 0, 0, 0.438); /* پس‌زمینه شفاف */
+            color: rgb(255, 255, 255); /* رنگ معمولی تب */
+          }
+
+          .nav-tabs .nav-link.active {
+            background-color: rgba(4, 205, 255, 0.5); /* رنگ مات برای تب فعال */
+            color: black; /* رنگ متن تب فعال */
+          }
+
+          .nav-tabs .nav-link:hover {
+            background-color: rgba(139, 119, 30, 0.774); /* رنگ مات برای hover */
+          }
+
+          .tab-pane {
+            display: none; /* مخفی کردن محتوای تب‌ها در ابتدا */
+          }
+
+          .tab-pane.active {
+            display: block; /* نمایش محتوای تب فعال */
+          }
+          
+        </style>
+      </head>
+      <body>
+        <div class="container mt-5">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="tab1"
+                data-toggle="tab"
+                href="#content1"
+                role="tab"
+                >تب 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab2"
+                data-toggle="tab"
+                href="#content2"
+                role="tab"
+                >تب 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab3"
+                data-toggle="tab"
+                href="#content3"
+                role="tab"
+                >تب 3</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab4"
+                data-toggle="tab"
+                href="#content4"
+                role="tab"
+                >تب 4</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab5"
+                data-toggle="tab"
+                href="#content5"
+                role="tab"
+                >تب 5</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab6"
+                data-toggle="tab"
+                href="#content6"
+                role="tab"
+                >تب 6</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab7"
+                data-toggle="tab"
+                href="#content7"
+                role="tab"
+                >تب 7</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="content1"
+              role="tabpanel"
+            >
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 1 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">semnani</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content2" role="tabpanel">
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 2 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حراست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content3" role="tabpanel">
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 3 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حراست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content4" role="tabpanel">
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 4 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حراست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content5" role="tabpanel">
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 5 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حراست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content6" role="tabpanel">
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 6 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حراست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content7" role="tabpanel">
+              <div class="row mt-3">
+                <!-- کارت‌ها برای تب 7 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حراست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">حسابدار</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">خدمات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">مدیریت</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">برنامه نویس</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">طراح گرافیست</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">کارشناس فروش</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">پشتیبانی</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">تدارکات</h5>
+                      <p class="card-text">متن توضیحات</p>
+                      <a href="#" class="btn btn-primary">مشاهده</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ... 10 کارت دیگر -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </body>
+    </html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
